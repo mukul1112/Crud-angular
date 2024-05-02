@@ -1,0 +1,20 @@
+.content{
+    padding-top: 10px;
+}
+.row{
+    display: flex;
+    gap: 10px;
+}
+.row mat-form-field {
+    /* Your styles for mat-form-field elements inside .row */
+    margin-bottom: 10px; /* For example */
+    width: 100%; /* For example */
+  }
+  
+.action{
+    display: flex;
+  justify-content: center; 
+}
+.action .button{
+    width: 100%;
+}
