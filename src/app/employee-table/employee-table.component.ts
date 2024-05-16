@@ -31,7 +31,7 @@ export class EmployeeTableComponent implements OnInit {
   constructor(private _empService:EmployeeService,private _dailoge:MatDialog,
     private _coreService:CoreService
   ) { }
-  displayedColumns: string[] = ['id', 
+  displayedColumns: string[] = [
     'firstname', 
     'lastname', 
     'email',

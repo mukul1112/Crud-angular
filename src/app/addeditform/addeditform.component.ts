@@ -31,7 +31,7 @@ export class AddeditformComponent implements OnInit {
       education:'',
       company:'',
       experience:'',
-      package:''
+      ctc:''
 
     })
   }

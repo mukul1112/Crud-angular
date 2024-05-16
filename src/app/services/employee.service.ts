@@ -9,17 +9,21 @@ export class EmployeeService {
 
   constructor(private http:HttpClient) {}
 
-    addEmployee(data : any) {
-      return this.http.post('http://localhost:3000/employee',data);
+  addEmployee(data : any) {
+      return this.http.post('https://hotel-services-83kt.onrender.com/hotels',data);
 
   }
   getEmployees() {
-    return this.http.get('http://localhost:3000/employee');
+    return this.http.get('https://hotel-services-83kt.onrender.com/hotels');
 }
-deleteEmployee(id:any) {
-  return this.http.delete(`http://localhost:3000/employee/${id}`);
+  deleteEmployee(id:any) {
+  return this.http.delete(`https://hotel-services-83kt.onrender.com/hotels/${id}`);
 }
-updateEmployee(id:any,data:any) {
-  return this.http.put(`http://localhost:3000/employee/${id}`,data);
+  updateEmployee(id:any,data:any) {
+  return this.http.put(`https://hotel-services-83kt.onrender.com/hotels/${id}`,data);
 }
 }
+
+
+// local  http://localhost:8080
+//for live git https://hotel-services-83kt.onrender.com

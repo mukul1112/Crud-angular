@@ -15,10 +15,10 @@
     <table mat-table [dataSource]="dataSource" matSort>
   
       <!-- ID Column -->
-      <ng-container matColumnDef="id">
+      <!-- <ng-container matColumnDef="id">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
-        <td mat-cell *matCellDef="let row"> {{row.id}} </td>
-      </ng-container>
+        <td mat-cell *matCellDef="let row"> {{}} </td>
+      </ng-container> -->
   
       <ng-container matColumnDef="firstname">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> First Name </th>
@@ -62,7 +62,7 @@
     
       <ng-container matColumnDef="package">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Package </th>
-        <td mat-cell *matCellDef="let row"> {{row.package | currency:'INR'}} Lpa</td>
+        <td mat-cell *matCellDef="let row"> {{row.ctc | currency:'INR'}} Lpa</td>
       </ng-container>
 
       <ng-container matColumnDef="action">
